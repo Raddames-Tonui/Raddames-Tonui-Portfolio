@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/mirrorme.webp" >
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header class=" bg-[#5A5A5A] w-full">
+        <nav class="flex justify-between items-center  w-[92%] mx-auto p-4 " style="position: sticky; top: 0;">
+            <div class="text-3xl font-extrabold">
+                <p>Bonjour!</p>
+            </div>
+            <div>
+                <ul class="hidden md:flex  md:flex-row items-center gap-[4vw] text-2xl font-bold ">
+                    <li class="hover:text-hulk-default">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="hover:text-hulk-default">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="hover:text-hulk-default">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="hover:text-hulk-default">
+                       <a href=""></a>
+                       <a href="#contacts">Contacts </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div>
+                <ul class="absolute w-64 right-0 top-16 bg-gray-100  flex flex-col items-center gap-[4vw] text-2xl font-bold ">
+                    <li class="hover:text-hulk-default">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="hover:text-hulk-default">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="hover:text-hulk-default">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="hover:text-hulk-default">
+                       <a href=""></a>
+                       <a href="#contacts">Contacts </a>
+                    </li>
+                </ul>
+            </div> -->
+        </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <!-- HOME -->
+        <section class="grid gap-2  md:gap-8 md:grid-cols-2 h-[80%] lg:h-screen bg-[#5A5A5A]">
+            <div class="flex flex-col text-center justify-center">
+                <h1 class="pt-2">JOHN DOE</h1>
+                <h2>Full Stack Web Developer</h2>
+                <p class=" w-[80%] md:w-[70%] mx-auto pb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cupiditate eaque optio officiis. Quia rem qui numquam delectus! Rerum iure ad illum natus similique beatae ullam, commodi dignissimos libero. Voluptatibus!</p>
+                <button class="">
+                    <a href="#contacts">CONTACT ME</a>
+                </button>
+            </div>
+            <div class="bg-[#5A5A5A] flex justify-self-center">
+                <img src="./assets/img/mirrorme.webp" class=" bg-[#C5C5C5] md:bg-[#5A5A5A] h-[90%] rounded-lg" text-centeralt="image of Raddames">
+            </div>
+            
+        </section>
+        <!-- SERVICES -->
+        <section class="bg-[#747172] h-screen">
+            <div class="text-center ">
+                <h1 id="services" class="md:pt-10">SERVICES</h1>
+                <h2>What I am great at</h2>
+                <p class="text-center w-[80%] md:w-[60%] mx-auto pb-3">HTML, CSS, TailwindCSS, JavaScript, React, SQL, Python—my 
+                    digital superpowers. I glide through code like a caffeinated kangaroo, wrangling bugs with a wink. 
+                    Need a website that wows or data that dazzles? 
+                    I've got the skills to sprinkle some magic into your digital kingdom! 🎩✨</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4  w-[90%] md:w-[80%] mx-auto overflow-hidden ">
+                <div class="bg-[#5A5A5A] hover:bg-[#10CA02] rounded-lg md:w-[20vw] md:h-[20vw]  flex flex-col items-center justify-center">
+                    <div class="">
+                        <svg class="w-10rem" xmlns="http://www.w3.org/2000/svg"  height="4em" viewBox="0 0 24 24"><path fill="black" d="M20.235 11.284a2.3 2.3 0 0 0-3.01-.149l-1.781-5.391a2.484 2.484 0 0 0-2.1-1.7l-8.581-.93a1.5 1.5 0 0 0-1.648 1.651l.93 8.579a2.479 2.479 0 0 0 1.7 2.1l5.39 1.77a2.258 2.258 0 0 0-.51 1.43a2.257 2.257 0 0 0 2.25 2.25a2.263 2.263 0 0 0 1.591-.661l5.77-5.769a2.249 2.249 0 0 0 0-3.181Zm-14.18 3.21a1.5 1.5 0 0 1-1.02-1.26l-.9-8.39l4.01 4.01a1.188 1.188 0 0 0 .281 1.221a1.167 1.167 0 1 0 1.649-1.651a1.143 1.143 0 0 0-1.209-.269l-4.02-4.02l8.39.9a1.476 1.476 0 0 1 1.259 1.02l1.931 5.86l-4.51 4.51Zm11.709-2.51a1.25 1.25 0 0 1 2.13.891a1.237 1.237 0 0 1-.369.88l-5.771 5.77a1.277 1.277 0 0 1-1.769 0a1.253 1.253 0 0 1 0-1.76Z"/></svg>
+                    </div>
+                    <h4> UI/UX Design</h4> 
+                    <p>220 projects</p>
+                </div>
+                <div class="bg-[#5A5A5A] hover:bg-[#10CA02]  rounded-lg md:w-[20vw] md:h-[20vw] flex flex-col items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg"  height="4em" viewBox="0 0 24 24"><path fill="black" d="M8 17.308L2.692 12L8 6.692l.713.714l-4.6 4.6L8.708 16.6zm8 0l-.713-.714l4.6-4.6L15.292 7.4L16 6.692L21.308 12z"/></svg>
+                    <h4> Web Development</h4> 
+                    <p>220 projects</p>
+                </div>
+                
+                <div class="bg-[#5A5A5A]  hover:bg-[#10CA02]  rounded-lg md:w-[20vw] md:h-[20vw] flex flex-col items-center justify-center ">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg"  height="4em" viewBox="0 0 24 24"><path fill="black" d="m19.485 20.154l-6.262-6.262q-.75.639-1.725.989q-.975.35-1.96.35q-2.402 0-4.066-1.663q-1.664-1.664-1.664-4.065T5.47 5.436q1.663-1.667 4.064-1.667q2.402 0 4.068 1.664q1.666 1.664 1.666 4.067q0 1.042-.369 2.017q-.37.975-.97 1.668l6.262 6.261zM9.538 14.23q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361q0-1.99-1.37-3.36q-1.37-1.37-3.36-1.37q-1.99 0-3.361 1.37q-1.37 1.37-1.37 3.36q0 1.99 1.37 3.36q1.37 1.37 3.36 1.37"/></svg>
+                    <h4> Web Research</h4> 
+                    <p>220 projects</p>
+                </div>
+                <div class="bg-[#5A5A5A]  hover:bg-[#10CA02]  rounded-lg md:w-[20vw] md:h-[20vw] flex flex-col items-center justify-center">
+                    <svg class="w-10rem" xmlns="http://www.w3.org/2000/svg"  height="4em" viewBox="0 0 2048 2048"><path fill=" black" d="M2048 384v640h-128V603l-768 768l-384-384l-675 674l-90-90l765-766l384 384l677-677h-421V384z"/></svg>
+                    <h4> Marketing</h4> 
+                    <p>220 projects</p>
+                </div>
+                <!-- <div class="grid md:row-start-2 md:col-span-1">
+                    <h1 >6+</h1>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="grid row-start-2  col-start-2  col-span-1" >
+                    <h1 >4+</h1>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="grid row-start-4  col-span-1" >
+                    <h1 >7+</h1>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="grid row-start-4  col-span-1" >
+                    <h1 >3+</h1>
+                    <p>Years of Experience</p>
+                </div> -->
+                
+            </div>
+        </section>
+        <!-- PORTFOLIO -->
+        <section class="bg-[#5A5A5A] h-screen">
+            <div>
+                <h1 id="portfolio" class="text-center md:pt-10">PORTFOLIO</h1>
+                <h2>My Masterpiece Collection</h2>
+            </div>
+            <div class=" bg-red-700 max-w-md ">
+                <div class="flex">
+                    <img src="./assets/img/black (1).jpeg" alt="">
+                </div>               
+                <div>
+                    <span>pink</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur </p>
+                </div> 
+            </div>
+            
+
+        </section>
+
+        <!-- CONTACTS -->
+        <section class="bg-[#2b2b2b] h-screen">
+            <div class="text-white text-center w-[80%] md:w-[60%] mx-auto">
+                <h1 id="contacts" class="text-center pt-2  md:pt-10">CONTACTS</h1>
+                <h2 class="text-white">Ways To Contact Me</h2>
+                <p class="text-center font-semibold">
+                    Official Hours: 8:00 am-5:00 pm EAT
+                </p class="">
+                    I assure you of my dedication and commitment to delivering exceptional results. I believe in clear communication, attention to detail, and a collaborative approach to ensure that we meet and exceed your expectations.
+                    Please feel free to reach out to me anytime with questions, feedback, or new ideas. I'm ready and eager to begin our journey together and create something amazing.
+                </p>
+            </div>
+            
+            <div class=" grid gap-2  md:grid-cols-3 md:gap-10 w-[85%] mx-auto">
+                <div class="grid md:col-span-2 bg-[#5A5A5A] bottom-0  px-4 py-2 gap-1 rounded">raddamestonui48@gamil.com</div>
+                <div class="grid md:col-span-2 bg-[#5A5A5A] bottom-0  px-4 py-2 gap-1 rounded">+254 713 77 863</div>
+                <div class="grid md:col-span-2 bg-[#5A5A5A] bottom-0  px-4 py-2 gap-1 rounded">Raddames Tonui</div>
+                <div class="grid md:col-span-2 bg-[#5A5A5A] bottom-0  px-4 py-2 gap-1 rounded"></div>
+                <div class="grid md:col-span-2 bg-[#5A5A5A] bottom-0  px-4 py-2 gap-1 rounded"></div>
+            </div>
+            <br>
+            <div>
+                <img src="./assets/img/wa.link_w8sp6t.png" alt="Image" class="mx-auto my-auto h-[20vh]">
+    
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+        <hr>
+        <div>           
+            <p class="text-center bg-[#0a6410] text-white font-light">
+                © Copyright <script type="text/javascript">document. write(new Date(). getFullYear());</script> | Raddames-Tonui
+            </p> 
+        </div>
+    </footer>
+</body>
+</html>
