@@ -7,8 +7,9 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./assets/img/mirrorme.webp" >
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Voces&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="font-[poppins]">
     <!-- HEADER SECTION -->
     <header class=" bg-[#5A5A5A] w-full">
         <nav class="flex justify-between items-center  w-[92%] mx-auto p-4 " style="position: sticky; top: 0;">
@@ -17,16 +18,16 @@
             </div>
             <div>
                 <ul class="hidden md:flex  md:flex-row items-center gap-[4vw] text-2xl font-bold ">
-                    <li class="hover:text-hulk-default">
+                    <li class="hover:text-[#10CA02]">
                         <a href="#">Home</a>
                     </li>
-                    <li class="hover:text-hulk-default">
+                    <li class="hover:text-[#10CA02]">
                         <a href="#services">Services</a>
                     </li>
-                    <li class="hover:text-hulk-default">
+                    <li class="hover:text-[#10CA02]">
                         <a href="#portfolio">Portfolio</a>
                     </li>
-                    <li class="hover:text-hulk-default">
+                    <li class="hover:text-[#10CA02]">
                        <a href=""></a>
                        <a href="#contacts">Contacts </a>
                     </li>
@@ -55,13 +56,16 @@
     <!-- MAIN SECTION -->
     <main>
         <!-- HOME -->
-        <section class="grid gap-2  md:gap-8 md:grid-cols-2 h-[80%] lg:h-screen bg-[#5A5A5A]">
+        <section class="grid gap-2  lg:grid-cols-2 lg:gap-8  h-[80%] md:h-screen bg-[#5A5A5A]">
             <div class="flex flex-col text-center justify-center">
-                <h1 class="pt-2">JOHN DOE</h1>
+                <h1 class="pt-2">TONUI RADDAMES</h1>
                 <h2>Full Stack Web Developer</h2>
-                <p class=" w-[80%] md:w-[70%] mx-auto pb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cupiditate eaque optio officiis. Quia rem qui numquam delectus! Rerum iure ad illum natus similique beatae ullam, commodi dignissimos libero. Voluptatibus!</p>
-                <button class="">
-                    <a href="#contacts">CONTACT ME</a>
+                <p class=" w-[80%]  mx-auto pb-3 ">I'm like a web wizard who speaks in code, weaving pixels and databases into digital magic 
+                    carpets that fly through cyberspace. 
+                    From front-end finesse to back-end sorcery, I'm the full-stack web developer who turns caffeine into code and bugs into 
+                    features faster than you can say "refresh." Just call me the caffeine-fueled coder with a penchant for pixel perfection!</p>      
+                <button class="mb-2">
+                    <a href="#contacts" class="ring-2 ring-[#10CA02] font-bold rounded-md hover:bg-[#10CA02] px-4 py-2  ">CONTACT ME</a>
                 </button>
             </div>
             <div class="bg-[#5A5A5A] flex justify-self-center">
@@ -70,7 +74,7 @@
             
         </section>
         <!-- SERVICES -->
-        <section class="bg-[#747172] md:screen">
+        <section class="bg-[#747172] md:h-screen ">
             <div class="text-center ">
                 <h1 id="services" class="md:pt-10">SERVICES</h1>
                 <h2>What I am great at</h2>
@@ -80,32 +84,32 @@
                     I've got the skills to sprinkle some magic into your digital kingdom! 🎩✨</p>
             </div>
             
-            <div div class="grid gap-4 md:grid-cols-4  w-[90%]  mx-auto ">
+            <div div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4  w-[90%]  mx-auto  ">
 
-                <div class= "bg-[#5A5A5A] hover:bg-[#10CA02] rounded-lg md:w-[20vw] md:h-[20vw] ">
+                <div class= "bg-[#5A5A5A] hover:bg-[#10CA02] rounded-lg lg:w-[20vw] lg:h-[20vw] overflow-auto">
                     <div class="mx-3">
-                        <svg  xmlns="http://www.w3.org/2000/svg"  height="3em" viewBox="0 0 24 24"><path fill="#10CA02" d="M20.235 11.284a2.3 2.3 0 0 0-3.01-.149l-1.781-5.391a2.484 2.484 0 0 0-2.1-1.7l-8.581-.93a1.5 1.5 0 0 0-1.648 1.651l.93 8.579a2.479 2.479 0 0 0 1.7 2.1l5.39 1.77a2.258 2.258 0 0 0-.51 1.43a2.257 2.257 0 0 0 2.25 2.25a2.263 2.263 0 0 0 1.591-.661l5.77-5.769a2.249 2.249 0 0 0 0-3.181Zm-14.18 3.21a1.5 1.5 0 0 1-1.02-1.26l-.9-8.39l4.01 4.01a1.188 1.188 0 0 0 .281 1.221a1.167 1.167 0 1 0 1.649-1.651a1.143 1.143 0 0 0-1.209-.269l-4.02-4.02l8.39.9a1.476 1.476 0 0 1 1.259 1.02l1.931 5.86l-4.51 4.51Zm11.709-2.51a1.25 1.25 0 0 1 2.13.891a1.237 1.237 0 0 1-.369.88l-5.771 5.77a1.277 1.277 0 0 1-1.769 0a1.253 1.253 0 0 1 0-1.76Z"/></svg>
+                        <svg class="mt-3" xmlns="http://www.w3.org/2000/svg"  height="3em" viewBox="0 0 24 24"><path fill="black" d="M20.235 11.284a2.3 2.3 0 0 0-3.01-.149l-1.781-5.391a2.484 2.484 0 0 0-2.1-1.7l-8.581-.93a1.5 1.5 0 0 0-1.648 1.651l.93 8.579a2.479 2.479 0 0 0 1.7 2.1l5.39 1.77a2.258 2.258 0 0 0-.51 1.43a2.257 2.257 0 0 0 2.25 2.25a2.263 2.263 0 0 0 1.591-.661l5.77-5.769a2.249 2.249 0 0 0 0-3.181Zm-14.18 3.21a1.5 1.5 0 0 1-1.02-1.26l-.9-8.39l4.01 4.01a1.188 1.188 0 0 0 .281 1.221a1.167 1.167 0 1 0 1.649-1.651a1.143 1.143 0 0 0-1.209-.269l-4.02-4.02l8.39.9a1.476 1.476 0 0 1 1.259 1.02l1.931 5.86l-4.51 4.51Zm11.709-2.51a1.25 1.25 0 0 1 2.13.891a1.237 1.237 0 0 1-.369.88l-5.771 5.77a1.277 1.277 0 0 1-1.769 0a1.253 1.253 0 0 1 0-1.76Z"/></svg>
                     </div>
-                    <div class="text-left m-3">
+                    <div class="text-left m-3 ">
                         <h4> UI/UX Design</h4>                    
-                        <p> Involves creating user-friendly interfaces and experiences for digital products to enhance user satisfaction and usability.</p>  
+                        <p class=""> Involves creating user-friendly interfaces and experiences for digital products to enhance user satisfaction and usability.</p>  
                     </div>
                     
                 </div>
 
-                <div class=" bg-[#5A5A5A] hover:bg-[#10CA02]  rounded-lg md:w-[20vw] md:h-[20vw] ">
+                <div class="bg-[#5A5A5A] hover:bg-[#10CA02]  rounded-lg lg:w-[20vw] lg:h-[20vw] overflow-auto ">
                     <div class="mx-3">
-                        <svg class="hover:fill="black"" xmlns="http://www.w3.org/2000/svg"  height="3em" viewBox="0 0 24 24"><path fill="#10CA02"  d="m8 18l-6-6l6-6l1.425 1.425l-4.6 4.6L9.4 16.6zm8 0l-1.425-1.425l4.6-4.6L14.6 7.4L16 6l6 6z"/></svg>
+                        <svg class="mt-3" xmlns="http://www.w3.org/2000/svg"  height="3em" viewBox="0 0 24 24"><path fill="black"  d="m8 18l-6-6l6-6l1.425 1.425l-4.6 4.6L9.4 16.6zm8 0l-1.425-1.425l4.6-4.6L14.6 7.4L16 6l6 6z"/></svg>
                     </div>
-                    <div class="text-left m-3">
+                    <div class="text-left m-3 ">
                         <h4> Web Development</h4>                   
                         <p>The process of gathering and analyzing information from various online sources to support decision-making, content creation, and problem-solving.</p>
                     </div>
                 </div>
                 
-                <div class=" bg-[#5A5A5A]  hover:bg-[#10CA02]  rounded-lg md:w-[20vw] md:h-[20vw]">
+                <div class=" bg-[#5A5A5A]  hover:bg-[#10CA02]  rounded-lg lg:w-[20vw] lg:h-[20vw] overflow-auto">
                     <div class="mx-3">
-                        <svg xmlns="http://www.w3.org/2000/svg"  height="3em" viewBox="0 0 24 24"><path fill="#10CA02" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5q0-1.875-1.312-3.187T9.5 5Q7.625 5 6.313 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14"/></svg>
+                        <svg class="mt-3" xmlns="http://www.w3.org/2000/svg"  height="3em" viewBox="0 0 24 24"><path fill="black" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5q0-1.875-1.312-3.187T9.5 5Q7.625 5 6.313 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14"/></svg>
                     </div>
                     <div class="text-left m-3">
                         <h4> Web Research</h4>    
@@ -113,9 +117,9 @@
                    </div>
                 </div>
 
-                <div class="bg-[#5A5A5A]  hover:bg-[#10CA02]  rounded-lg md:w-[20vw] md:h-[20vw] ">
+                <div class="bg-[#5A5A5A]  hover:bg-[#10CA02]  rounded-lg lg:w-[20vw] lg:h-[20vw] overflow-auto">
                    <div class="text-left m-3">
-                        <svg class="" xmlns="http://www.w3.org/2000/svg"  height="3em" viewBox="0 0 2048 2048"><path fill="#10CA02" d="M2048 384v640h-128V603l-768 768l-384-384l-675 674l-90-90l765-766l384 384l677-677h-421V384z"/></svg>
+                        <svg class="mt-3" xmlns="http://www.w3.org/2000/svg"  height="3em" viewBox="0 0 2048 2048"><path fill="black" d="M2048 384v640h-128V603l-768 768l-384-384l-675 674l-90-90l765-766l384 384l677-677h-421V384z"/></svg>
                    </div> 
                    <div class="text-left m-3">
                         <h4> Marketing</h4>   
@@ -152,36 +156,38 @@
                 <p class="text-center font-semibold">
                     Official Hours: 8:00 am-5:00 pm EAT
                 </p class="">
-                    I assure you of my dedication and commitment to delivering exceptional results. I believe in clear communication, attention to detail, and a collaborative approach to ensure that we meet and exceed your expectations.
+                     I believe in clear communication, attention to detail, and a collaborative approach to ensure that we meet and exceed your expectations.
                     Please feel free to reach out to me anytime with questions, feedback, or new ideas. I'm ready and eager to begin our journey together and create something amazing.
                 </p>
             </div>
             
-            <div class=" grid gap-2  md:grid-cols-3 md:gap-10 w-[85%] mx-auto">
-                <div class="grid col-span-2 bg-[#5A5A5A] bottom-0  px-4 py-2 gap-1 rounded">
-                    <a href="https://twitter.com/Mzee_Telee">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 16 16"><path fill="white" d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05zM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843z"/></svg>
+            <div class=" grid gap-8 grid-cols-6 mx-auto w-[90%] p-3 ">
+                <div class=" grid col-start-1 col-span-2">
+                    <a href=" https://twitter.com/Mzee_Telee " class="bg-[#5A5A5A] hover:ring-2 ring-inset hover:ring-inset-[#10CA02] p-3 ">
+                         <svg xmlns="http://www.w3.org/2000/svg"  height="1em" viewBox="0 0 24 24"><path fill="white" d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z"/></svg> 
                     </a>
-                    
+                    <p>
+                        
+                    </p>
                 </div>
-                <div class="grid col-span-2 bg-[#5A5A5A] bottom-0  px-4 py-2 gap-1 rounded">
-                    <a href="https://www.linkedin.com/in/raddames-tonui-01a751277/">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 24 24"><path fill="white" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg>
-                    </a>
+                <div class=" grid col-start-3 col-span-2 ">
+                   <a href="https://www.linkedin.com/in/raddames-tonui-01a751277/" class="bg-[#5A5A5A] rounded-md hover:ring-2 hover:ring-[#10CA02] p-3 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24"><path fill="white" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg>
+                </a>
                 </div>
-                <div class="grid col-span-2 bg-[#5A5A5A] bottom-0  px-4 py-2 gap-1 rounded">
-                   <a href="https://www.instagram.com/its__radde_/">
-                    <svg xmlns="http://www.w3.org/2000/svg"  height="2.5em" viewBox="0 0 256 256"><path fill="white" d="M128 80a48 48 0 1 0 48 48a48.05 48.05 0 0 0-48-48m0 80a32 32 0 1 1 32-32a32 32 0 0 1-32 32m48-136H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56m40 152a40 40 0 0 1-40 40H80a40 40 0 0 1-40-40V80a40 40 0 0 1 40-40h96a40 40 0 0 1 40 40ZM192 76a12 12 0 1 1-12-12a12 12 0 0 1 12 12"/></svg>
+                <div class=" grid col-start-5 col-span-2 ">
+                   <a href="https://www.instagram.com/its__radde_/ " class="bg-[#5A5A5A] rounded-md hover:ring-2 hover:ring-[#10CA02] p-3 ">
+                    <svg xmlns="http://www.w3.org/2000/svg"  height="1em" viewBox="0 0 256 256"><path fill="white" d="M128 80a48 48 0 1 0 48 48a48.05 48.05 0 0 0-48-48m0 80a32 32 0 1 1 32-32a32 32 0 0 1-32 32m48-136H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56m40 152a40 40 0 0 1-40 40H80a40 40 0 0 1-40-40V80a40 40 0 0 1 40-40h96a40 40 0 0 1 40 40ZM192 76a12 12 0 1 1-12-12a12 12 0 0 1 12 12"/></svg>
                    </a>
                 </div>
-                <div class="grid col-span-2 bg-[#5A5A5A] bottom-0  px-4 py-2 gap-1 rounded">
-                    <a href="mailto:raddamestonui48@gmail.com">
-                        <svg xmlns="http://www.w3.org/2000/svg"  height="2.5em" viewBox="0 0 24 24"><path fill="white" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z"/></svg>
-                    </a>
+                <div class=" grid col-start-2 col-span-2 row-start-2  ">
+                  <a href="mailto:raddamestonui48@gmail.com " class=" bg-[#5A5A5A] rounded-md hover:ring-2 hover:ring-[#10CA02] p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg"  height="1em" viewBox="0 0 24 24"><path fill="white" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z"/></svg>
+                  </a>
                 </div>
-                <div class="grid col-span-2 bg-[#5A5A5A] bottom-0  px-4 py-2 gap-1 rounded">
-                    <a href="tel:+254717771461">
-                        <svg xmlns="http://www.w3.org/2000/svg"  height="2.5em" viewBox="0 0 256 256"><path fill="white" d="M152.27 37.93a8 8 0 0 1 9.8-5.66a86.22 86.22 0 0 1 61.66 61.66a8 8 0 0 1-5.66 9.8a8.23 8.23 0 0 1-2.07.27a8 8 0 0 1-7.73-5.94a70.35 70.35 0 0 0-50.33-50.33a8 8 0 0 1-5.67-9.8m-2.33 41.8c13.79 3.68 22.65 12.54 26.33 26.33A8 8 0 0 0 184 112a8.23 8.23 0 0 0 2.07-.27a8 8 0 0 0 5.66-9.8c-5.12-19.16-18.5-32.54-37.66-37.66a8 8 0 1 0-4.13 15.46m81.94 95.35A56.26 56.26 0 0 1 176 224C96.6 224 32 159.4 32 80a56.26 56.26 0 0 1 48.92-55.88a16 16 0 0 1 16.62 9.52l21.12 47.15v.12A16 16 0 0 1 117.39 96c-.18.27-.37.52-.57.77L96 121.45c7.49 15.22 23.41 31 38.83 38.51l24.34-20.71a8.12 8.12 0 0 1 .75-.56a16 16 0 0 1 15.17-1.4l.13.06l47.11 21.11a16 16 0 0 1 9.55 16.62m-15.88-2h-.11l-47-21.05l-24.35 20.71a8.44 8.44 0 0 1-.74.56a16 16 0 0 1-15.75 1.14c-18.73-9.05-37.4-27.58-46.46-46.11a16 16 0 0 1 1-15.7a6.13 6.13 0 0 1 .57-.77L104 87.15l-21-47a.61.61 0 0 1 0-.12A40.2 40.2 0 0 0 48 80a128.14 128.14 0 0 0 128 128a40.21 40.21 0 0 0 40-34.93Z"/></svg>
+                <div class="grid col-start-4  col-span-2 row-start-2">
+                    <a href="tel:+254717771461 " class="bg-[#5A5A5A] rounded-md  hover:ring-2 hover:ring-[#10CA02] p-3 ">
+                        <svg xmlns="http://www.w3.org/2000/svg"  height="1em" viewBox="0 0 256 256"><path fill="white" d="M152.27 37.93a8 8 0 0 1 9.8-5.66a86.22 86.22 0 0 1 61.66 61.66a8 8 0 0 1-5.66 9.8a8.23 8.23 0 0 1-2.07.27a8 8 0 0 1-7.73-5.94a70.35 70.35 0 0 0-50.33-50.33a8 8 0 0 1-5.67-9.8m-2.33 41.8c13.79 3.68 22.65 12.54 26.33 26.33A8 8 0 0 0 184 112a8.23 8.23 0 0 0 2.07-.27a8 8 0 0 0 5.66-9.8c-5.12-19.16-18.5-32.54-37.66-37.66a8 8 0 1 0-4.13 15.46m81.94 95.35A56.26 56.26 0 0 1 176 224C96.6 224 32 159.4 32 80a56.26 56.26 0 0 1 48.92-55.88a16 16 0 0 1 16.62 9.52l21.12 47.15v.12A16 16 0 0 1 117.39 96c-.18.27-.37.52-.57.77L96 121.45c7.49 15.22 23.41 31 38.83 38.51l24.34-20.71a8.12 8.12 0 0 1 .75-.56a16 16 0 0 1 15.17-1.4l.13.06l47.11 21.11a16 16 0 0 1 9.55 16.62m-15.88-2h-.11l-47-21.05l-24.35 20.71a8.44 8.44 0 0 1-.74.56a16 16 0 0 1-15.75 1.14c-18.73-9.05-37.4-27.58-46.46-46.11a16 16 0 0 1 1-15.7a6.13 6.13 0 0 1 .57-.77L104 87.15l-21-47a.61.61 0 0 1 0-.12A40.2 40.2 0 0 0 48 80a128.14 128.14 0 0 0 128 128a40.21 40.21 0 0 0 40-34.93Z"/></svg>
                     </a>
                 </div>
             </div>
@@ -196,7 +202,7 @@
         
         <hr>
         <div>           
-            <p class="text-center bg-[#0a6410] text-white font-light">
+            <p class="text-center bg-[#10CA02] text-white font-light">
                 © Copyright <script type="text/javascript">document. write(new Date(). getFullYear());</script> | Raddames-Tonui
             </p> 
         </div>

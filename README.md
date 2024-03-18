@@ -1,13 +1,15 @@
 
- PERSONAL PORTFOLIO
+ `PERSONAL PORTFOLIO`
 
- INSTALLATION
+This webite has been created using HTML and css (tailwindcss )
+
+ INSTALLATION: Install tailwindcss
+
  Run in terminal: 
 
  npx tailwindcss -i ./input.css -o ./output.css --watch
 
- *To use tailwind.custom.config.js*
- Run in terminal: 
 
-npm run build-css
+ 
+
 

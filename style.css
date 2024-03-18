@@ -2,6 +2,14 @@ body{
     color: black;
     font-size: large;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scroll bars for Firefox */
+body {
+    scrollbar-width: none;
+}
 
 h1
 {
@@ -16,13 +24,8 @@ h2{
     font-size: 1.5rem;
     text-align: center;
 }
-{
-    color: ;
-}
 h4{
     font-weight: bold;
 }
 
-.project{
-    padding:2rem;
-}
+
