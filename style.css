@@ -29,3 +29,25 @@ h4{
 }
 
 
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce-element:hover {
+    animation: bounce 0.5s ease infinite;
+}
+
+.hover-line {
+    display: inline-block;
+    padding-bottom: 10px; /* Space for the line */
+    transition: border-bottom 0.3s ease; /* Smooth transition for the line */
+}
+
+.hover-line:hover {
+    border-bottom: 4px solid grey; /* Style of the line on hover */
+}
