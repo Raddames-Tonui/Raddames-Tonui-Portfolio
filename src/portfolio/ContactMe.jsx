@@ -34,16 +34,15 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="bg-gray-800 h-[90vh] flex flex-col justify-center items-center text-center">
-      <h1 className="text-4xl sm:text-5xl font-bold text-lime-500 mb-8">
-        Contact Me
-      </h1>
-
+    <div className="bg-gray-800 min-h-[90vh] flex flex-col justify-center items-center text-center">
       <form
         onSubmit={handleSubmit}
         className="bg-gray-700 p-8  shadow-lg max-w-xl w-full"
       >
-        {/* Name Input */}
+        <h2 className="text-3xl font-bold text-lime-500 mb-6">
+          Let's Collaborate!
+        </h2>
+
         <div className="mb-6">
           <label
             htmlFor="name"

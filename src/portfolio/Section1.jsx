@@ -1,25 +1,61 @@
 import React from "react";
 
+const Section1 = () => {
+  return (
+    <div className="relative min-h-screen bg-[#0f0f2d] text-white flex items-center justify-center">
+      {/* Left Section: Text Content */}
+      <div className="text-center max-w-lg">
+        {/* Name Section */}
+        <h1 className="text-5xl font-bold mb-2">
+          <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">Brian Marete</span>
+        </h1>
 
-const Section1 = () => (
-  <div
-    className="relative h-screen bg-cover bg-center"
-    style={{ backgroundImage: `url('books2.jpeg')` }}
-  >
-    <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-    <div className="relative z-10 flex flex-col items-center justify-center text-center h-full text-white px-4">
-      <h1 className="text-5xl font-bold mb-6">Educator</h1>
-      <p className="text-lg mb-8">
-        If you are looking for the best way to create a breathtaking educational
-        website, look no further. Educator has everything you will ever need.
-      </p>
-      <button className="px-6 py-3 bg-white text-black font-semibold hover:bg-gray-200">
-        <span className="flex items-center text-4xl">
-        
-        </span>
-      </button>
+        {/* Description */}
+        <p className="text-lg mb-8">
+          Hi! 👋 I'm a software developer from Nairobi, Kenya.
+        </p>
+
+        {/* Buttons */}
+        <div className="flex justify-center gap-4 mb-6">
+          <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded hover:opacity-90">
+            Projects
+          </button>
+          <button className="px-6 py-3 border-2 border-white text-white font-semibold rounded hover:bg-white hover:text-black">
+            Let's talk
+          </button>
+        </div>
+
+        {/* Social Icons */}
+        <div className="flex justify-center gap-6 text-3xl">
+          <a
+            href="#"
+            className="hover:text-blue-400"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="#"
+            className="hover:text-gray-400"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      {/* Right Section: Profile Image */}
+      <div className="absolute right-10 top-1/2 transform -translate-y-1/2 rounded-full overflow-hidden border-4 border-white w-40 h-40 md:w-48 md:h-48">
+        <img
+          src="your-profile-image.jpg"
+          alt="Profile"
+          className="object-cover w-full h-full"
+        />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Section1;
