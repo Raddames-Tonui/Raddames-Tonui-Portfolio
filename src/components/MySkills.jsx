@@ -2,7 +2,7 @@ import React from "react";
 
 const MySkills = () => {
   return (
-    <section className="bg-gray-800 text-white py-16 w-[80vw] mx-auto">
+    <section className="bg-gray-900 text-white pt-20  w-[80vw] mx-auto">
       <div className="container  flex flex-col lg:flex-row items-center">
         {/* Left Content */}
         <div className="lg:w-1/2">
@@ -22,9 +22,9 @@ const MySkills = () => {
         </div>
 
         {/* Right Image */}
-        <div className="lg:w-1/2 mt-8 lg:mt-0 lg:pl-16 relative">
+        <div className="lg:w-1/2 mt-10 lg:mt-0 lg:pl-16 relative flex justify-end">
           {/* Box Behind the Image */}
-          <div className="absolute border-2 border-lime-500 w-[70%] h-full bottom-6 left-6 "></div>
+          <div className="absolute border-2 border-lime-500 w-[80%]  h-full bottom-5 right-5  "></div>
           {/* Image */}
           <img
             src="/keyboard.webp"

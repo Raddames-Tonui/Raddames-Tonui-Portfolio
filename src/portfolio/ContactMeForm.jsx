@@ -47,19 +47,24 @@ const ContactMeForm = () => {
   };
 
   return (
-    <div className="bg-gray-800 flex flex-col justify-center items-center text-center">
+    <div className="bg-gray-800 flex flex-col justify-center items-center text-center pb-10">
+      <h2 className="text-4xl font-bold my-10 text-lime-500 ">
+        <span className="text-gradient">CONTACT</span> ME
+        <div className="w-[50%] h-1 bg-gradient-to-r from-lime-500 to-lime-100 mt-3"></div>
+      </h2>
+
       <form
         onSubmit={handleSubmit}
-        className="bg-gray-700 p-8 shadow-lg max-w-xl w-full"
+        className="bg-gray-700 p-8 shadow-lg max-w-xl w-full md:w-[80vw]"
       >
         <h2 className="text-3xl font-bold text-lime-500 mb-6">
-          Let's Collaborate!
+          Let's get started!
         </h2>
 
         <div className="mb-6">
           <label
             htmlFor="name"
-            className="text-lime-500 text-lg font-semibold block"
+            className="text-gray-400 text-lg font-semibold block text-start"
           >
             Your Name
           </label>
@@ -78,9 +83,9 @@ const ContactMeForm = () => {
         <div className="mb-6">
           <label
             htmlFor="email"
-            className="text-lime-500 text-lg font-semibold block"
+            className="text-gray-400 text-lg font-semibold block text-start"
           >
-            Your Email
+            Your Email:
           </label>
           <input
             type="email"
@@ -97,9 +102,9 @@ const ContactMeForm = () => {
         <div className="mb-6">
           <label
             htmlFor="message"
-            className="text-lime-500 text-lg font-semibold block"
+            className="text-gray-400 text-lg font-semibold block text-start"
           >
-            Your Message
+            Your Message:
           </label>
           <textarea
             id="message"
@@ -117,7 +122,7 @@ const ContactMeForm = () => {
           type="submit"
           className="w-full py-3 px-6 text-lg font-bold text-white bg-lime-500 rounded-md hover:bg-lime-600 focus:outline-none focus:ring-2 focus:ring-lime-500"
         >
-          Send Message
+          Send Message:
         </button>
       </form>
 

@@ -35,7 +35,7 @@ const Layout = () => {
   }, [lastScrollY]);
 
   return (
-    <div className="min-h-screen flex flex-col no-scrollbar">
+    <div className="min-h-screen flex flex-col no-scrollbar ">
       {/* Render Navbar based on screen size */}
       {isMobile ? (
         <NavbarMobile isMobile={isMobile} showNavbar={showNavbar} />
@@ -43,7 +43,7 @@ const Layout = () => {
         <Navbar isMobile={isMobile} showNavbar={showNavbar} />
       )}
 
-      <main className="flex-grow no-scrollbar">
+      <main className=" flex-grow no-scrollbar">
         <Outlet />
       </main>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const MyProjects = () => (
-  <div className="h-screen sticky top-0 bg-gray-900  relative ">
+  <div className="h-screen sticky top-0 bg-gray-800  relative ">
     {/* Background Overlay */}
     <div className="absolute inset-0 bg-gray-80"></div>
 
@@ -39,7 +39,7 @@ const MyProjects = () => (
           {
             title: "School System",
             img: "schoolsystem.png",
-            url: "https://schoolsystem.com",
+            url: "#",
             description:
               "A comprehensive system for managing school operations.",
           },
@@ -57,10 +57,11 @@ const MyProjects = () => (
             description:
               "jenkins, docker, kubernetes, ansible, terraform, cicd",
           },
+          
         ].map((project, index) => (
           <div
             key={index}
-            className="relative group bg-gray-700 shadow-lg overflow-hidden hover:scale-105 transform transition-all duration-300"
+            className="relative group bg-gray-800 shadow-lg overflow-hidden hover:scale-105 transform transition-all duration-300"
           >
             {/* Project Thumbnail */}
             <img
