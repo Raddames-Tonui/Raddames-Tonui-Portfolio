@@ -4,6 +4,7 @@ import StickySection2 from "./portfolio/StickySection2";
 import Home from "./portfolio/Home";
 import AboutMe from "./portfolio/AboutMe";
 import MyProjects from "./portfolio/MyProjects";
+import Navbar from "./components/Navbar";
 
 const Portfolio = () => {
   const contactRef = useRef(null);
@@ -13,7 +14,8 @@ const Portfolio = () => {
   };
 
   return (
-    <div>
+    <div >
+     
       <section id="home">
         <Home />
       </section>

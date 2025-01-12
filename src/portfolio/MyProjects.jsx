@@ -1,12 +1,12 @@
 import React from "react";
 
 const MyProjects = () => (
-  <div className="h-screen sticky top-0 bg-gray-900 relative ">
+  <div className="h-screen sticky top-0 bg-gray-900  relative ">
     {/* Background Overlay */}
     <div className="absolute inset-0 bg-gray-80"></div>
 
     {/* Content */}
-    <div className="relative z-10 flex flex-col items-center text-center h-full  text-white px-6 py-10 animate-fadeIn w-[80vw] mx-auto">
+    <div className="relative z-10 flex flex-col items-center text-center h-full  text-white px-6 py-16 animate-fadeIn w-[80vw] mx-auto">
       {/* Section Title */}
       <h2 className="text-4xl font-bold mb-10 text-lime-500">
         <span className="text-gradient">MY</span> PROJECTS
@@ -34,7 +34,7 @@ const MyProjects = () => (
             img: "sheria360.png",
             url: "https://sheria360.netlify.app",
             description:
-              "A legal services platform for accessing law resources.",
+              "Award-winning legal services platform recognized at the PLP Hackathon for accessing law resources",
           },
           {
             title: "School System",
@@ -53,7 +53,7 @@ const MyProjects = () => (
           {
             title: "Ask Me About DevOps",
             img: "Devops.webp",
-            url: "#contact", // Linking to the contact section
+            url: "#contact", 
             description:
               "jenkins, docker, kubernetes, ansible, terraform, cicd",
           },
