@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import ContactMe from "./ContactMe";
+import ContactMe from "./ContactMeForm";
 import Footer from "../components/Footer";
 
 const words = ["impressed", "excited", "inspired", "driven", "curious", "motivated", "eager", "ready"];
@@ -34,7 +34,7 @@ const StickySection2= () => {
                     ease: "linear",
                     repeat: Infinity,
                     repeatType: "loop",
-                    delay: 2,
+                    delay: 4,
                   }}
                 >
                   {words.map((word, index) => (

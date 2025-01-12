@@ -1,13 +1,13 @@
 import React from "react";
 
-const Section1 = () => {
+const Home = () => {
   return (
-    <div className="relative min-h-screen bg-[#0f0f2d] text-white flex items-center justify-center">
+    <div className="relative min-h-screen bg-gray-900 text-white flex items-center justify-center">
       {/* Left Section: Text Content */}
       <div className="text-center max-w-lg">
         {/* Name Section */}
         <h1 className="text-5xl font-bold mb-2">
-          <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">Brian Marete</span>
+          <span className="bg-gradient-to-r from-blue-400 via-green-500 to-teal-300 bg-clip-text text-transparent">Raddames Tonui</span>
         </h1>
 
         {/* Description */}
@@ -17,12 +17,12 @@ const Section1 = () => {
 
         {/* Buttons */}
         <div className="flex justify-center gap-4 mb-6">
-          <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded hover:opacity-90">
+          <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-teal-500 text-white font-semibold rounded hover:opacity-90">
             Projects
           </button>
-          <button className="px-6 py-3 border-2 border-white text-white font-semibold rounded hover:bg-white hover:text-black">
+          <a href="#contact" className="px-6 py-3 border-2 border-white text-white font-semibold rounded hover:bg-white hover:text-black">
             Let's talk
-          </button>
+          </a>
         </div>
 
         {/* Social Icons */}
@@ -58,4 +58,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default Home;

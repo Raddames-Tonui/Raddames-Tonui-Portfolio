@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const ContactMe = () => {
+const ContactMeForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
-  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,19 +26,31 @@ const ContactMe = () => {
       )
       .then(
         (result) => {
-          setStatus("Message sent successfully!");
+          toast.success("Message sent successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+          });
+          // Clear the form after success
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
         },
         (error) => {
-          setStatus("An error occurred. Please try again.");
+          toast.error("An error occurred. Please try again.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
         }
       );
   };
 
   return (
-    <div className="bg-gray-800 min-h-[90vh] flex flex-col justify-center items-center text-center">
+    <div className="bg-gray-800 flex flex-col justify-center items-center text-center">
       <form
         onSubmit={handleSubmit}
-        className="bg-gray-700 p-8  shadow-lg max-w-xl w-full"
+        className="bg-gray-700 p-8 shadow-lg max-w-xl w-full"
       >
         <h2 className="text-3xl font-bold text-lime-500 mb-6">
           Let's Collaborate!
@@ -46,7 +59,7 @@ const ContactMe = () => {
         <div className="mb-6">
           <label
             htmlFor="name"
-            className="text-lime-500 text-lg font-semibold  "
+            className="text-lime-500 text-lg font-semibold block"
           >
             Your Name
           </label>
@@ -62,11 +75,10 @@ const ContactMe = () => {
           />
         </div>
 
-        {/* Email Input */}
         <div className="mb-6">
           <label
             htmlFor="email"
-            className="text-lime-500 text-lg font-semibold block "
+            className="text-lime-500 text-lg font-semibold block"
           >
             Your Email
           </label>
@@ -82,11 +94,10 @@ const ContactMe = () => {
           />
         </div>
 
-        {/* Message Input */}
         <div className="mb-6">
           <label
             htmlFor="message"
-            className="text-lime-500 text-lg font-semibold block "
+            className="text-lime-500 text-lg font-semibold block"
           >
             Your Message
           </label>
@@ -102,27 +113,17 @@ const ContactMe = () => {
           />
         </div>
 
-        {/* Submit Button */}
         <button
           type="submit"
           className="w-full py-3 px-6 text-lg font-bold text-white bg-lime-500 rounded-md hover:bg-lime-600 focus:outline-none focus:ring-2 focus:ring-lime-500"
         >
           Send Message
         </button>
-
-        {/* Status Message */}
-        {status && (
-          <div
-            className={`mt-4 text-lg ${
-              status.includes("success") ? "text-lime-500" : "text-red-500"
-            }`}
-          >
-            {status}
-          </div>
-        )}
       </form>
+
+      <ToastContainer />
     </div>
   );
 };
 
-export default ContactMe;
+export default ContactMeForm;
