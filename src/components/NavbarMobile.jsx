@@ -63,7 +63,7 @@ function NavbarMobile() {
         <div
           className={`${
             isMenuOpen
-              ? "fixed top-0 left-0 h-full w-4/5 bg-gray-900 text-lime-500 flex flex-col justify-center items-center gap-6 transition-all duration-300"
+              ? "fixed top-0 left-0 h-full w-4/5  text-lime-500 flex flex-col justify-center items-center gap-6 transition-all duration-300"
               : "hidden"
           } lg:hidden text-lg font-medium`}
         >

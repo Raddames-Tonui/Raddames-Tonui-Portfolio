@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-800 text-white flex items-center justify-center">
       {/* Container with 80% viewport width */}
-      <div className="w-[80vw] flex flex-col-reverse md:flex-row items-center justify-center gap-10">
+      <div className="w-[80vw] flex flex-col-reverse md:flex-row items-center justify-between ">
         {/* Left Section: Text Content */}
         <div className="text-center md:text-left max-w-lg">
           {/* Name Section */}
@@ -57,21 +57,19 @@ const Home = () => {
         </div>
 
         {/* Right Section: Profile Image with Circles */}
-        <div className="relative flex-shrink-0">
+        <div className="relative flex-shrink-0 m-5">
           {/* Decorative Circles */}
-          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-lime-400 via-purple-500 to-lime-100 opacity-30 w-72 h-72 sm:w-96 sm:h-96 -z-10 blur-3xl "></div>
-          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-lime-100 via-purple-500 to-lime-400 opacity-20 w-64 h-64 sm:w-80 sm:h-80 -z-10 blur-2xl "></div>
-
-          {/* Profile Image */}
-          <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64">
+          <div className=" relative flex justify-end">
+            {/* Box Behind the Image */}
+            <div className="absolute border-2 border-lime-500 w-[90%]  h-full top-2 left-2  rounded-full "></div>
+            {/* Image */}
             <img
-              src="/myimage.jpg"
-              alt="Profile"
-              className="object-cover w-full h-full rounded-full border-4 border-white"
+              src="/MyImage.jpg"
+              alt="keyboard image"
+              className="relative rounded-full  shadow-lg z-10 w-[90%]"
             />
           </div>
         </div>
-        
       </div>
     </div>
   );

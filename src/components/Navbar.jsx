@@ -31,8 +31,8 @@ function Navbar() {
 
   return (
     <nav
-      className={`bg-gray-900 text-lime-500 transition-transform duration-300 ${
-        showNavbar ? "translate-y-0" : "-translate-y-full"
+      className={`bg-gray-900 text-lime-500 transition-transform duration-400 ${
+        showNavbar ? "translate-y-0" : "-translate-y-[110vh]"
       } fixed top-2 px-7 rounded-full  left-1/2 transform -translate-x-1/2 z-50 py-4 border-2 border-lime-900`}
     >
       <div className="flex justify-between items-center">
