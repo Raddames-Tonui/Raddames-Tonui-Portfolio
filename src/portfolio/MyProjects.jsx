@@ -60,7 +60,7 @@ const MyProjects = () => {
       <div className="absolute inset-0 bg-gray-800"></div>
 
       {/* Content */}
-      <div className="overflow-y-scroll md:overflow-hidden relative z-10 flex flex-col items-center text-center h-full text-white px-6 py-16 animate-fadeIn w-[80vw] mx-auto">
+      <div className="overflow-y-scroll md:overflow-hidden relative z-10 flex flex-col items-center text-center h-full text-white px-6 py-16 animate-fadeIn   md:w-[80vw] mx-auto">
         {/* Section Title */}
         <h2 className="text-4xl font-bold mb-10 text-lime-500">
           <span className="text-gradient">MY</span> PROJECTS
@@ -68,7 +68,7 @@ const MyProjects = () => {
         </h2>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full max-w-7xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5  w-full max-w-7xl">
           {projects.map((project, index) => (
             <div
               key={index}
