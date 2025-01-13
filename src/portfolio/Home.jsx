@@ -35,25 +35,7 @@ const Home = () => {
             </a>
           </div>
 
-          {/* Social Icons */}
-          <div className="flex justify-center md:justify-start gap-6 text-3xl">
-            <a
-              href="#"
-              className="hover:text-lime-400"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a
-              href="#"
-              className="hover:text-gray-400"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-          </div>
+       
         </div>
 
         {/* Right Section: Profile Image with Circles */}
@@ -61,12 +43,12 @@ const Home = () => {
           {/* Decorative Circles */}
           <div className=" relative flex justify-end">
             {/* Box Behind the Image */}
-            <div className="absolute border-2 border-lime-500 w-[90%]  h-full top-2 left-2  rounded-full "></div>
+            <div className="absolute border-2 border-lime-500 w-[100%]  h-full top-8 right-8  rounded-full "></div>
             {/* Image */}
             <img
               src="/MyImage.jpg"
-              alt="keyboard image"
-              className="relative rounded-full  shadow-lg z-10 w-[90%]"
+              alt="Raddames Tonui Image"
+              className="relative rounded-full  shadow-lg z-10 w-[100%]"
             />
           </div>
         </div>
