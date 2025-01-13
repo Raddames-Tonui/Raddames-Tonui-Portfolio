@@ -1,69 +1,71 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-function NavbarMobile() {
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+function NavbarMobile({ showNavbar, setShowNavbar, navbarRef }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleScroll = () => {
-    if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
-        setShowNavbar(false); // Hide navbar on scroll down
-      } else {
-        setShowNavbar(true); // Show navbar on scroll up
-      }
-      setLastScrollY(window.scrollY);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const handleNavClick = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-    setIsMenuOpen(false); // Close menu after a link is clicked
+    setIsMenuOpen(false); // Close the menu after a link is clicked
   };
 
   return (
     <nav
-      className={`bg-gray-900 text-lime-500 transition-transform duration-300 ${
+      ref={navbarRef}
+      className={` text-lime-500 transition-transform duration-300 ${
         showNavbar ? "translate-y-0" : "-translate-y-full"
-      } fixed top-6  px-10 z-50 py-4 `}
+      } fixed top-0 left-0 w-full px-10 z-50 py-5`}
     >
       <div className="flex justify-between items-center">
         {/* Hamburger Button for Small Screens */}
         <button
           className="lg:hidden text-lime-500 focus:outline-none"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={toggleMenu}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            strokeWidth="2"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
+          {isMenuOpen ? (
+            // X icon when menu is open
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            // Hamburger icon when menu is closed
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          )}
         </button>
 
-        {/* Navigation Links for Small Screens */}
+        {/* Mobile Navigation Menu */}
         <div
           className={`${
             isMenuOpen
-              ? "fixed top-0 left-0 h-full w-4/5  text-lime-500 flex flex-col justify-center items-center gap-6 transition-all duration-300"
+              ? "fixed top-16 left-0 h-screen w-1/2 bg-gray-900 text-lime-500 flex flex-col items-start justify-center gap-6 p-8 transition-all duration-300"
               : "hidden"
           } lg:hidden text-lg font-medium`}
         >

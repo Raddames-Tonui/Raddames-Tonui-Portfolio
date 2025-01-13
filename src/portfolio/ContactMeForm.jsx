@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const ContactMeForm = () => {
+// Forward ref to the functional component
+const ContactMeForm = (props, ref) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -47,17 +48,17 @@ const ContactMeForm = () => {
   };
 
   return (
-    <div className="bg-gray-800 flex flex-col justify-center items-center text-center pb-10">
-      <h2 className="text-4xl font-bold my-10 text-lime-500 ">
+    <div ref={ref} className="bg-gray-800 flex flex-col justify-center items-center text-center pb-10">
+      <h2 className="text-4xl font-bold  mt-10 text-lime-500 ">
         <span className="text-gradient">CONTACT</span> ME
         <div className="w-[50%] h-1 bg-gradient-to-r from-lime-500 to-lime-100 mt-3"></div>
       </h2>
 
       <form
         onSubmit={handleSubmit}
-        className="bg-gray-700 p-8 shadow-lg max-w-xl w-full md:w-[80vw]"
+        className="md:bg-gray-700 p-8 md:mt-6 md:shadow-lg max-w-xl w-full md:w-[80vw]"
       >
-        <h2 className="text-3xl font-bold text-lime-500 mb-6">
+        <h2 className="text-3xl font-bold text-lime-500 mb-6 hidden md:block">
           Let's get started!
         </h2>
 
@@ -131,4 +132,4 @@ const ContactMeForm = () => {
   );
 };
 
-export default ContactMeForm;
+export default forwardRef(ContactMeForm);

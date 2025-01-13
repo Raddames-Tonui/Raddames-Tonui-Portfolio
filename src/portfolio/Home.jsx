@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gray-800 text-white flex items-center justify-center">
+    <div className="min-h-screen bg-gray-800 text-white flex items-center justify-center ">
       {/* Container with 80% viewport width */}
       <div className="w-[80vw] flex flex-col-reverse md:flex-row items-center justify-between ">
         {/* Left Section: Text Content */}
@@ -39,16 +39,16 @@ const Home = () => {
         </div>
 
         {/* Right Section: Profile Image with Circles */}
-        <div className="relative flex-shrink-0 m-5">
+        <div className="relative flex-shrink-0 m-5 mb-16 ">
           {/* Decorative Circles */}
-          <div className=" relative flex justify-end">
+          <div className=" relative flex justify-end ">
             {/* Box Behind the Image */}
-            <div className="absolute border-2 border-lime-500 w-[100%]  h-full top-8 right-8  rounded-full "></div>
+            <div className="absolute border-2 border-lime-500 w-[100%]   h-full top-6 right-6  rounded-full "></div>
             {/* Image */}
             <img
               src="/MyImage.jpg"
               alt="Raddames Tonui Image"
-              className="relative rounded-full  shadow-lg z-10 w-[100%]"
+              className="relative rounded-full  shadow-lg z-10 w-[100%] "
             />
           </div>
         </div>

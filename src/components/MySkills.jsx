@@ -21,7 +21,7 @@ const MySkills = () => {
         </div>
 
         {/* Right Image */}
-        <div className="lg:w-1/2 mt-10 lg:mt-0 lg:pl-16 relative flex justify-end">
+        <div className="lg:w-1/2 mt-10 lg:mt-0 lg:pl-16 relative flex justify-start  md:justify-end">
           {/* Box Behind the Image */}
           <div className="absolute border-2 border-lime-500 w-[80%] h-full bottom-5 right-5"></div>
           {/* Image */}
