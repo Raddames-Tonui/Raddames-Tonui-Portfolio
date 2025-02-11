@@ -16,8 +16,7 @@ const MyProjects = () => {
       title: "Marps Africa Portfolio",
       img: "marpsAfrica.png",
       url: "https://marps.co.ke",
-      description:
-        "A portfolio website showcasing Marps Africa's services.",
+      description: "A portfolio website showcasing Marps Africa's services.",
     },
     {
       title: "Job Mtaani",
@@ -35,16 +34,14 @@ const MyProjects = () => {
     {
       title: "School System",
       img: "schoolsystem.png",
-      url: "#",
-      description:
-        "A comprehensive system for managing school operations.",
+      url: "https://sms.marps.co.ke/",
+      description: "A comprehensive system for managing school operations.",
     },
     {
       title: "Jua Movie",
       img: "JuaMovie.png",
       url: "https://jua-movie.netlify.app",
-      description:
-        "A movie streaming platform with a modern user interface.",
+      description: "A movie streaming platform with a modern user interface.",
     },
     {
       title: "Ask Me About DevOps",
@@ -55,7 +52,7 @@ const MyProjects = () => {
   ];
 
   return (
-    <div className="h-screen sticky top-0 bg-gray-800 relative">
+    <div className="h-screen  top-0 bg-gray-800 relative">
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-gray-800"></div>
 
@@ -68,7 +65,7 @@ const MyProjects = () => {
         </h2>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5  w-full max-w-7xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5  xl:w-[70vw] w-full max-w-7xl">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -78,7 +75,7 @@ const MyProjects = () => {
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48  object-cover"
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">

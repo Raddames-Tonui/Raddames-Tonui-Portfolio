@@ -3,8 +3,7 @@ import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// Forward ref to the functional component
-const ContactMeForm = (props, ref) => {
+const ContactMeForm = forwardRef((_, ref) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,19 +25,14 @@ const ContactMeForm = (props, ref) => {
         "2kSJ0ZV8aln22Ak7S"
       )
       .then(
-        (result) => {
+        () => {
           toast.success("Message sent successfully!", {
             position: "top-right",
             autoClose: 3000,
           });
-          // Clear the form after success
-          setFormData({
-            name: "",
-            email: "",
-            message: "",
-          });
+          setFormData({ name: "", email: "", message: "" });
         },
-        (error) => {
+        () => {
           toast.error("An error occurred. Please try again.", {
             position: "top-right",
             autoClose: 3000,
@@ -48,7 +42,7 @@ const ContactMeForm = (props, ref) => {
   };
 
   return (
-    <div ref={ref} className="bg-gray-800 flex flex-col justify-center items-center text-center pb-10">
+    <div ref={ref} className="bg-gray-800 flex flex-col justify-center items-center text-center pb-10 min-h-[100vh]">
       <h2 className="text-4xl font-bold  mt-10 text-lime-500 ">
         <span className="text-gradient">CONTACT</span> ME
         <div className="w-[50%] h-1 bg-gradient-to-r from-lime-500 to-lime-100 mt-3"></div>
@@ -58,15 +52,10 @@ const ContactMeForm = (props, ref) => {
         onSubmit={handleSubmit}
         className="md:bg-gray-700 p-8 md:mt-6 md:shadow-lg max-w-xl w-full md:w-[80vw]"
       >
-        <h2 className="text-3xl font-bold text-lime-500 mb-6 hidden md:block">
-          Let's get started!
-        </h2>
+        <h2 className="text-3xl font-bold text-lime-500 mb-6 hidden md:block">Let's get started!</h2>
 
         <div className="mb-6">
-          <label
-            htmlFor="name"
-            className="text-gray-400 text-lg font-semibold block text-start"
-          >
+          <label htmlFor="name" className="text-gray-400 text-lg font-semibold block text-start">
             Your Name
           </label>
           <input
@@ -82,11 +71,8 @@ const ContactMeForm = (props, ref) => {
         </div>
 
         <div className="mb-6">
-          <label
-            htmlFor="email"
-            className="text-gray-400 text-lg font-semibold block text-start"
-          >
-            Your Email:
+          <label htmlFor="email" className="text-gray-400 text-lg font-semibold block text-start">
+            Your Email
           </label>
           <input
             type="email"
@@ -101,11 +87,8 @@ const ContactMeForm = (props, ref) => {
         </div>
 
         <div className="mb-6">
-          <label
-            htmlFor="message"
-            className="text-gray-400 text-lg font-semibold block text-start"
-          >
-            Your Message:
+          <label htmlFor="message" className="text-gray-400 text-lg font-semibold block text-start">
+            Your Message
           </label>
           <textarea
             id="message"
@@ -123,13 +106,16 @@ const ContactMeForm = (props, ref) => {
           type="submit"
           className="w-full py-3 px-6 text-lg font-bold text-white bg-lime-500 rounded-md hover:bg-lime-600 focus:outline-none focus:ring-2 focus:ring-lime-500"
         >
-          Send Message:
+          Send Message
         </button>
       </form>
 
       <ToastContainer />
     </div>
   );
-};
+});
 
-export default forwardRef(ContactMeForm);
+// **Fix: Add a display name to prevent ESLint warning**
+ContactMeForm.displayName = "ContactMeForm";
+
+export default ContactMeForm;

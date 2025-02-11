@@ -10,11 +10,11 @@ const AboutMe = () => {
   };
 
   return (
-    <div className="relative bg-gray-900 text-white">
+    <div className="relative bg-gray-900 text-white min-h-screen ">
       <MySkills />
 
       {/* Skills Section */}
-      <div className="py-20 w-[80vw] mx-auto">
+      <div className="py-20 w-[80vw] mx-auto xl:max-w-[70vw]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Skill Card 1 */}
           <motion.div

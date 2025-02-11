@@ -1,21 +1,16 @@
-// Portfolio.js
 import React, { useRef } from "react";
-import StickySection2 from "./portfolio/StickySection2";
 import Home from "./portfolio/Home";
 import AboutMe from "./portfolio/AboutMe";
 import MyProjects from "./portfolio/MyProjects";
-import Navbar from "./components/Navbar";
+import MyContacts from "./portfolio/MyContacts";
+import ContactMeForm from "./portfolio/ContactMeForm";
+import Footer from "./components/Footer";
 
 const Portfolio = () => {
   const contactRef = useRef(null);
 
-  const handleDevOpsClick = () => {
-    contactRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
-    <div >
-     
+    <div>
       <section id="home">
         <Home />
       </section>
@@ -23,10 +18,16 @@ const Portfolio = () => {
         <AboutMe />
       </section>
       <section id="projects">
-        <MyProjects handleDevOpsClick={handleDevOpsClick} />
+        <MyProjects />
+      </section>
+      <section >
+        <MyContacts />
       </section>
       <section id="contact">
-        <StickySection2 contactRef={contactRef} />
+        <ContactMeForm ref={contactRef} />
+      </section>
+      <section>
+        <Footer />
       </section>
     </div>
   );

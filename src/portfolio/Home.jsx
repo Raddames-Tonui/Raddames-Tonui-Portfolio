@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-800 text-white flex items-center justify-center ">
       {/* Container with 80% viewport width */}
-      <div className="w-[80vw] flex flex-col-reverse md:flex-row items-center justify-between ">
+      <div className="w-[80vw]  xl:max-w-[70vw] flex flex-col-reverse md:flex-row items-center justify-between ">
         {/* Left Section: Text Content */}
         <div className="text-center md:text-left max-w-lg">
           {/* Name Section */}

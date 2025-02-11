@@ -4,13 +4,14 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-lime-500 py-5 md:py-12">
-     
-      <hr className="mx-10 lg:mx-20 my-5 md:my-10 border-lime-500" />
+    <footer className="bg-gray-900 text-lime-500 py-5 md:py-12 flex justify-center">
+      <div className="w-full lg:max-w-[70vw]">
+        {/* Horizontal Line Before the Text */}
+        <hr className="mx-10 lg:mx-20 my-5 md:my-10 border-lime-500" />
 
-      <div className="text-center text-md">
-        <p>&copy; {currentYear} @Raddames Tonui. All rights reserved.</p>
-       
+        <div className="text-center text-md">
+          <p>&copy;{currentYear} @Raddames Tonui. <br /> All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );

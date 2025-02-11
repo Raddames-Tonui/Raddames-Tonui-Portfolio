@@ -2,15 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Stop scrollbar from appearing */
-@layer utilities {
-  /* Hide scrollbar for Chrome, Safari, and Opera */
-  .no-scrollbar::-webkit-scrollbar {
+
+
+
+/* Hide scrollbar but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
     display: none;
   }
-  /* Hide scrollbar for IE, Edge, and Firefox */
+  
   .no-scrollbar {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    overflow: auto; /* Ensure scrolling works */
   }
+  
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 7px;  /* Reduced width of the scrollbar */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Style the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Style the scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
