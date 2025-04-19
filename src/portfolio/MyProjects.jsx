@@ -19,10 +19,11 @@ const MyProjects = () => {
       description: "A portfolio website showcasing Marps Africa's services.",
     },
     {
-      title: "Job Mtaani",
-      img: "jobmtaani.png",
-      url: "https://job-mtaani.netlify.app",
-      description: "A platform connecting job seekers and employers.",
+      title: "Atibule Institute",
+      img: "atibule.png",
+      url: "https://atibule.com",
+      description:
+        "Empowering learners with skills in business, IT, and leadership.",
     },
     {
       title: "Sheria 360",
@@ -38,10 +39,11 @@ const MyProjects = () => {
       description: "A comprehensive system for managing school operations.",
     },
     {
-      title: "Jua Movie",
-      img: "JuaMovie.png",
-      url: "https://jua-movie.netlify.app",
-      description: "A movie streaming platform with a modern user interface.",
+      title: "JazaForm",
+      img: "jazaform.png",
+      url: "https://simple-survey-client-alpha.vercel.app/",
+      description:
+        "Simple, dynamic platform for creating and analyzing responses with ease.",
     },
     {
       title: "Ask Me About DevOps",
